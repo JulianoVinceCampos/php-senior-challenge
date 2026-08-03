@@ -151,14 +151,14 @@ docker compose up -d
 
 ### A) AWS (Escolher 1)
 
-#### Opção 1 — S3 (Preferida)
+#### Opção 1: S3 (Preferida)
 
 - Endpoint `POST /api/products/{id}/image`
 - Upload para storage (S3 real ou simulado)
 - Salvar URL no produto
 - Arquitetura testável
 
-#### Opção 2 — SQS
+#### Opção 2: SQS
 
 - Publicar mensagem `product.created` ao criar produto
 - Pode usar **LocalStack** ou implementação fake
